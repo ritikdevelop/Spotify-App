@@ -38,18 +38,14 @@ const DisplayAlbum = () => {
         <img className="m-auto w-4" src={assets.clock_icon} alt="" />
       </div>
       <hr />
-      {songsData.map((item,index) => (
+      {songsData.map((item, index) => (
         <div
           key={index}
           className="grid grid-cols-3 sm:grid-cols-4 gap-2 p-2 items-center text-[#a7a7a7] hover:bg-[#ffffff26] cursor-pointer"
         >
           <p className="text-white">
             <b className="mr-4 text-[#a7a7a7]">{index + 1}</b>
-            <img
-              className="inline w-10 mr-5"
-              src={item.image}
-              alt=""
-            />
+            <img className="inline w-10 mr-5" src={item.image} alt="" />
             {item.name}
           </p>
           <p className="text-[15px]">{albumData.name}</p>
