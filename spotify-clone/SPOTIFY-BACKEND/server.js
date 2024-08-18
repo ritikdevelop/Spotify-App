@@ -10,8 +10,8 @@ import connectCloudinary from './src/config/cloudinary.js';
 //? App config
 const app = express();
 const port = process.env.PORT || 4000;
-// connectDB();
-// connectCloudinary();
+connectDB();
+connectCloudinary();
 
 
 
